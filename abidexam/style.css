@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+    width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+    background-color: aqua;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.logo img{
+    height: 50px;
+    width: auto;
+
+}
+.menu{
+    padding: 10px;
+    color: 1px solid green;
+    font-size: 20px;
+    
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(173, 2, 2);
+    padding: 5px;
+}
+.slider{
+    display: flex;
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    background: linear-gradient(rgba(63, 58, 58, 0.8),rgba(197, 185, 185, 0.6)), url(./image/undraw_Educator_re_ju47.png);
+    background-size: full;
+}
+.slider h1{
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    color: rgb(38, 36, 41);
+}
+.slider p{
+    color: rgb(94, 47, 47);
+}
+.slider a{
+    border: 1px solid gold;
+    padding: 10px 25px; 
+    position: absolute;
+    top: 70%;
+    left: 44%;
+    text-decoration: none;
+    background: rgb(216, 60, 60);
+    color: aqua;
+    border-radius: 20px;
+}
+.service{
+    width: 1200px;
+    height: 180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.service span{
+    color: rgb(197, 18, 18);
+}
+.heropart{
+    display: flex; 
+    gap:1% ;
+    width: 1200px;
+    height: 0 auto;
+    margin: 0 auto;
+}
+
+.card{
+    display: grid;
+    justify-content: center;
+    padding: 40px;
+    background: rgb(202, 62, 62);
+    width: 24%;
+    box-sizing: border-box;
+}
+.card img{
+    height: 50px;
+    width: 50px;
+    border-radius:50%;
+    border: solid tomato;
+    margin: auto;
+    position: relative;
+    bottom: 10px;
+}
+.card p{
+    padding: 4px;
+}
+.card a{
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid tomato;
+    background: rgb(161, 157, 157);
+    border-radius: 20px;
+    color: rgb(36, 32, 32);
+}
+.one{
+    animation: just 7s linear infinite;
+
+}
+@keyframes one{
+
+}
+
+footer{
+    width: 1200px;
+    margin: 0 auto;
+}
+.footer-main{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(380px,auto));
+    gap: 5px;
+}
+.block img{
+    padding-right: 10px;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 7px;
+
+}
+.block{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(100, 100, 100);
+    display: grid;
+    grid-template-rows: repeat(auto-fit,minmax(10px,auto));
+
+}
+.block a{
+text-decoration: none;
+font-size: 20px;
+color: rgb(72, 74, 79);
+}
+.low{
+    text-align: center;
+    background: rgb(192, 184, 184);
+    width:1200px;
+    margin: 0 auto;
+}
+.low a{
+    text-decoration: none;
+    color: black;
+}
+
