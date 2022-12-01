@@ -50,6 +50,10 @@
     </section>
     <!-- logo part  -->
 
+    <div class="cont annou">
+        <marquee behavior="" direction=""><?php dynamic_sidebar('text');?></marquee>
+    </div>
+
         <!-- navbar-->
         <section class="cont">
             <div class="row navbarmain">
@@ -58,7 +62,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             
                         <?php wp_nav_menu([
-                            'menu_location'=>'TM',
+                            'theme_location'=>'TM',
                             'menu_class'=>'navbar-nav menu_top'
                         ])?>
                             <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -115,13 +119,27 @@
                     </a>
                 </div>
             <!-- slider part start -->
-                <div class="slider">
+                <div class="slider cont">
                     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <?php
+                        $qry = new WP_Query([
+                            'post_type'=>'post',
+                            'category'=>'slider'
+                        ])
+                        ?>
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <a href=""><img src="<?=get_template_directory_uri()?>/assets/images/slider/0.jpg" class="d-block w-100" alt=""></a>
+
+                            <?php
+                            $x=0;
+                            while($qry->have_posts()){$qry->the_post();
+                            $x++; ?>
+                            <div class="carousel-item <?= ($x==1)?'active':''?>">
+                                <?php the_post_thumbnail();?>
+                                <!-- <a href=""><img src="<?=get_template_directory_uri()?>/assets/images/slider/0.jpg" class="d-block w-100" alt=""></a> -->
                             </div>
-                            <div class="carousel-item">
+                            <?php } ?>
+
+                            <!-- <div class="carousel-item">
                                 <a href=""><img src="<?=get_template_directory_uri()?>/assets/images/slider/333_gov.png" class="d-block w-100" alt=""></a>
                             </div>
                             <div class="carousel-item">
@@ -150,7 +168,7 @@
                             </div>
                             <div class="carousel-item">
                                 <a href=""><img src="<?=get_template_directory_uri()?>/assets/images/slider/pmobanner.jpg" class="d-block w-100" alt=""></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -364,7 +382,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                         <?php wp_nav_menu([
-                            'menu_location'=>'FM',
+                            'theme_location'=>'FM',
                             'menu_class'=>'navbar-nav menu_bottom'
                         ])?>
 <!-- 

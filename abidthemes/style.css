@@ -411,7 +411,7 @@ body{
     margin: 0 auto;
 }
 
-
+/* new */
 
 
 .menu_top li {
@@ -425,4 +425,9 @@ body{
     margin-right: 5px;
     color: rgb(117, 115, 115);
 
+}
+.slider img{
+    width: 98%;
+    height: 280px;
+    display: block;
 }

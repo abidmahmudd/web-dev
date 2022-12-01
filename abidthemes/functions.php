@@ -5,6 +5,7 @@ wp_enqueue_script( 'script-name', get_template_directory_uri() . '/assets/js/boo
 
 add_theme_support( 'title-tag' );
 add_theme_support( 'custom-logo' );
+add_theme_support( 'post-thumbnails' );
 
 register_nav_menus([
         'TM'=>'Primary',
@@ -14,6 +15,13 @@ register_nav_menus([
 register_sidebar([
     'name'=> 'Main Banner',
     'id'=> 'mainbanner',
+    'before_widget'=>'',
+    'after_widget'=>''
+
+]);
+register_sidebar([
+    'name'=> 'text',
+    'id'=> 'text',
     'before_widget'=>'',
     'after_widget'=>''
 
