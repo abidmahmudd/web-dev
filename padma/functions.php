@@ -14,6 +14,12 @@
         'before_widget' => '',
 		'after_widget'  => ''
     ) );
+
+    register_nav_menus( array(
+        'tm'=>'primary',
+
+    ) );
+    
     register_sidebar( array(
         'name'=>'hero bottom image',
         'id'=>'hbimg',
@@ -26,10 +32,80 @@
         'before_widget' => '',
 		'after_widget'  => ''
     ) );
-
-    register_nav_menus( array(
-        'tm'=>'primary',
-
+    register_sidebar( array(
+        'name'=>'hero bottom image2',
+        'id'=>'hbimg2',
+        'before_widget' => '',
+		'after_widget'  => ''
     ) );
+    register_sidebar( array(
+        'name'=>'hero bottom body2',
+        'id'=>'hbbody2',
+        'before_widget' => '',
+		'after_widget'  => ''
+    ) );
+    register_sidebar( array(
+        'name'=>'hero bottom image3',
+        'id'=>'hbimg3',
+        'before_widget' => '',
+		'after_widget'  => ''
+    ) );
+    register_sidebar( array(
+        'name'=>'hero bottom body3',
+        'id'=>'hbbody3',
+        'before_widget' => '',
+		'after_widget'  => ''
+    ) );
+    register_sidebar( array(
+        'name'=>'pimg1',
+        'id'=>'pimg1',
+        'before_widget' => '',
+		'after_widget'  => ''
+    ) );
+    register_sidebar( array(
+        'name'=>'pbody1',
+        'id'=>'pbody1',
+        'before_widget' => '',
+		'after_widget'  => ''
+    ) );
+    register_sidebar( array(
+        'name'=>'pimg2',
+        'id'=>'pimg2',
+        'before_widget' => '',
+		'after_widget'  => ''
+    ) );
+    register_sidebar( array(
+        'name'=>'pbody2',
+        'id'=>'pbody2',
+        'before_widget' => '',
+		'after_widget'  => ''
+    ) );
+    register_sidebar( array(
+        'name'=>'pimg3',
+        'id'=>'pimg3',
+        'before_widget' => '',
+		'after_widget'  => ''
+    ) );
+    register_sidebar( array(
+        'name'=>'pbody3',
+        'id'=>'pbody3',
+        'before_widget' => '',
+		'after_widget'  => ''
+    ) );
+    register_sidebar( array(
+        'name'=>'pimg4',
+        'id'=>'pimg4',
+        'before_widget' => '',
+		'after_widget'  => ''
+    ) );
+    register_sidebar( array(
+        'name'=>'pbody4',
+        'id'=>'pbody4',
+        'before_widget' => '',
+		'after_widget'  => ''
+    ) );
+
+
+
 
 ?>
